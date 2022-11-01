@@ -1,0 +1,21 @@
+{
+  "name": "init-typescript-project-with-debug-neovim",
+  "version": "1.0.0",
+  "description": "Init dependencies and structure to typescript project with debug neovim",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "nodeJs",
+    "debug",
+    "debugger",
+    "neovim"
+  ],
+  "author": "Diego Hurtado",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

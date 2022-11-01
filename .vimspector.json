@@ -1,0 +1,30 @@
+{
+  "configurations": {
+    "run": {
+      "adapter": "vscode-node",
+      "breakpoints": {
+        "exception": {
+          "all": "Y",
+          "uncaught": "Y"
+        }
+      },
+      "configuration": {
+        "request": "launch",
+        "protocol": "auto",
+        "stopOnEntry": true,
+        "console": "integratedTerminal",
+        "program": "${workspaceRoot}/src/index.ts",
+        "preLaunchTask": "tsc: build - tsconfig.debug.json", // Doesn't works in vimInspector
+        "sourceMaps": true,
+        "smartStep": true,
+        "internalConsoleOptions": "openOnSessionStart",
+        "env": {
+          "PROFILE_ACTIVE": "dev",
+          "GOOGLE_CAPTCHA_URL": "https://www.google.com/recaptcha/api/siteverify"
+        },
+        "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+        "cwd": "${workspaceRoot}"
+      }
+    }
+  }
+}
