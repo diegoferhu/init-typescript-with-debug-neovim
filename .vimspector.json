@@ -13,7 +13,7 @@
         "protocol": "auto",
         "stopOnEntry": true,
         "console": "integratedTerminal",
-        "program": "${workspaceRoot}/src/index.ts",
+        "program": "${workspaceRoot}/local-launcher.ts",
         "preLaunchTask": "tsc: build - tsconfig.debug.json", // Doesn't works in vimInspector
         "sourceMaps": true,
         "smartStep": true,

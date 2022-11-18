@@ -1,5 +1,8 @@
 import { MyClass } from "./MyClass";
 
-const myInstance = new MyClass();
-myInstance;
-console.log(`My Class executed`);
+export const handler = async (): Promise<any> => {
+  const myInstance = new MyClass();
+  myInstance;
+  console.log(`My Class executed`);
+  return "SUCCES!";
+};
