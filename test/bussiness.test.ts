@@ -8,6 +8,6 @@ describe("Business test cases", () => {
 
   it("verify captcha successful and higher score than umbral", async () => {
     const result = await handler();
-    expect(true).toBe(true);
+    expect(result).toBe("SUCCES!");
   });
 });
